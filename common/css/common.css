@@ -1,7 +1,14 @@
 @charset "utf-8";
+/* font */
+@font-face {
+    font-family: 'Vitro_pride';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_pride.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* reset */
 * { margin:0; padding:0; border:0; outline:0; vertical-align:top; -webkit-text-size-adjust:none; }
-body {font-family: 'GmarketSansMedium'; font-size:14px; color:#151515;}
+body {font-family: 'Vitro_pride'; font-size:14px; color:#151515;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
 ul, ol, dl { list-style:none; }
 img, video { border:0; vertical-align:top; }

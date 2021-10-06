@@ -12,26 +12,247 @@
     <link rel="stylesheet" href="maincss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- <script src="common/js/jquery-1.8.3.min.js"></script> -->
     <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
     <script src="common/js/prefixfree.min.js"></script>
+    <!-- bxslider -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider02').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            minSlides: 3,
+            maxSlides: 3,
+            moveSlides: 3,
+            slideWidth: 152,
+            slideMargin: 50,
+            });
+        });
+    </script>   
 </head>
 <body>
     <div id="wrap">
-        <header id="header">header</header>
+        <header id="header">
+            <h2 class="hidden">헤더 영역</h2>
+        </header>
         <section id="container">
-            <article class="account_wrap"></article>
-            <article class="card_wrap"></article>
-            <article class="loan_wrap"></article>
-            <article class="mpoint_wrap"></article>
-            <article class="xpoint_wrap"></article>
-            <article class="culture_wrap"></article>
-            <article class="customer_wrap"></article>
-            <article class="digital_wrap"></article>
-            <article class="event_wrap"></article>
+            <h2 class="hidden">컨텐츠 영역</h2>
+            <article class="account_wrap">
+                <div class="account_inner">
+                    <div class="account_box">
+                        <div class="tit_box">
+                            <h3 class="ct_tit"><a href="#">My Account ></a></h3>
+                            <a href="#" class="signup_btn">회원가입</a>
+                        </div>
+                        <ul class="btn_group">
+                            <li><a href="#">현대카드 앱</a></li>
+                            <li><a href="#">아이디</a></li>
+                            <li><a href="#">인증서</a></li>
+                        </ul>
+                        <div class="find_box">
+                            <a href="#">아이디 찾기 ></a>
+                            <a href="#">비밀번호 찾기 ></a>
+                        </div>
+                    </div>
+                    <div class="account_txt_box">
+                        <a href="#">
+                            <p>혜택에 다 한 카드<br>네이버 현대카드</p>
+                            <p>자세히 보기 ></p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="card_wrap">
+                <div class="card_inner">
+                    <h3 class="ct_tit"><a href="#">카드 안내·신청 ></a></h3>
+                    <div class="slider02">
+                        <figure>
+                            <a href="#"><img src="images/card.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">Z family</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card02.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">Z work</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card03.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">Z untact</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card04.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">에너지플러스카드 Edition2</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card05.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">네이버 현대카드</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card06.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">스마일카드</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card07.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">M BOOST</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card07.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">M2 BOOST</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/card07.png" alt="카드이미지"></a>
+                            <figcaption class="slide02_txt"><a href="#">M3 BOOST</a></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+            <article class="loan_wrap">
+                <div class="loan_inner">
+                    <h3 class="ct_tit"><a href="#">개인사업자 대출 비교서비스 ></a></h3>
+                    <div class="loan_box">
+                        <figure>
+                            <a href="#"><img src="images/monetary.gif" alt="개인사업자대출배너"></a>
+                            <figcaption><a href="#" class="loan_link_txt">신용도 영향 없이 간편하게<br> 비교·신청하는 대출</a></figcaption>
+                        </figure>
+                        <ul class="loan_list">
+                            <li>
+                                <p class="loan_tit">목돈이 필요할 때,</p>
+                                <a href="#" class="loan_link_txt">장기카드대출(카드론) ></a>
+                            </li>
+                            <li>
+                                <p class="loan_tit">일상에서 현금이 필요할 때,</p>
+                                <a href="#" class="loan_link_txt">단기카드대출(현금서비스) ></a>
+                            </li>
+                            <li>
+                                <p class="loan_tit">카드 대금이 부담될 때,</p>
+                                <a href="#" class="loan_link_txt">일부결제금액이월약정(리볼빙) ></a>
+                            </li>
+                            <li>
+                                <p class="loan_tit">현대카드 회원이 아니어도,</p>
+                                <a href="#" class="loan_link_txt">카드 비회원 신용대출 ></a>
+                            </li>
+                            <li>
+                                <p class="loan_tit">일시불 결제금액이 부담될 때,</p>
+                                <a href="#" class="loan_link_txt">분할납부 결제(할부전환) ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="mpoint_wrap">
+                <div class="mpoint_inner">
+                    <h3 class="ct_tit"><a href="#">M혜택 안내 ></a></h3>
+                    <a href="#" class="point_box">
+                        <figure>
+                            <img src="images/mbenefit.gif" alt="m포인트배너이미지">
+                            <figcaption>M포인트 사용처</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </article>
+            <article class="xpoint_wrap">
+                <div class="xpoint_inner">
+                    <h3 class="ct_tit"><a href="#">X혜택 안내 ></a></h3>
+                    <a href="#" class="point_box">
+                        <figure>
+                            <img src="images/xbenefit.gif" alt="x포인트배너이미지">
+                            <figcaption>5% / 10% 시즌 스페셜 할인</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </article>
+            <article class="culture_wrap">
+                <div class="culture_inner">
+                    <h3 class="ct_tit"><a href="#">컬처·라이프스타일 ></a></h3>
+                    <div class="slider">
+                        <figure>
+                            <a href="#"><img src="images/main_banner.jpeg" alt="메인배너이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">IRON & WOOD<br>Techinical Golf Training Space</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/main_banner02.png" alt="메인배너이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">현대카드 다빈치모텔</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/main_banner03.jpeg" alt="메인배너이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">현대카드 슈퍼콘서트 25<br>QUEEN</a></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+            <article class="customer_wrap">
+                <div class="customer_inner">
+                    <h3 class="ct_tit"><a href="#">고객센터 ></a></h3>
+                    <ul class="customer_list">
+                        <li><a href="#">상담/문의</a></li>
+                        <li><a href="#">도난·분실 신고/해제</a></li>
+                        <li><a href="#">전자민원접수</a></li>
+                        <li><a href="#">장애인 회원 상담 안내</a></li>
+                        <li><a href="#">경영공시</a></li>
+                        <li><a href="#">상품공시실</a></li>
+                    </ul>
+                    <p class="customer_number">1577-6000</p>
+                    <p class="customer_number_abroad">(해외 : 82-2-3015-9000)</p>
+                    <div class="customer_txt_box">
+                        <a href="#">재난지원금 지급 및 백신 접종을 빙자한</a>
+                        <p>보이스피싱 수법에 주의하세요!</p>
+                    </div>
+                </div>
+            </article>
+            <article class="digital_wrap">
+                <div class="digital_inner">
+                    <h3 class="ct_tit"><a href="#">Digital 현대카드 프로젝트 ></a></h3>
+                    <div class="slider">
+                        <figure>
+                            <a href="#"><img src="images/digital.png" alt="디지털이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">현대카드에 대해 궁금한 점을 실시간으로 상담, 인공지능 챗봇 Buddy</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/digital02.png" alt="디지털이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">한 장의 카드로 보유한 현대카드의 모든 혜택을 받고 싶을 때, Chameleon</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/digital03.png" alt="디지털이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">단 한 번의 클릭으로 온라인 결제를 완료하는 방법, PayShot</a></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+            <article class="event_wrap">
+                <div class="event_inner">
+                    <h3 class="ct_tit"><a href="#">이벤트 ></a></h3>
+                    <div class="slider">
+                        <figure>
+                            <a href="#"><img src="images/event.png" alt="이벤트이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">카드이용알림서비스(카카오톡 알림톡) 이용요금 무료 혜택</a></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="images/event02.png" alt="이벤트이미지"></a>
+                            <figcaption class="slide_txt"><a href="#">대한항공카드 여행 충전 이벤트</a></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
         </section>
-        <footer id="footer">footer</footer>
+        <footer id="footer">
+            <h2 class="hidden">푸터 영역</h2>
+        </footer>
     </div>
+    
 </body>
 </html>
